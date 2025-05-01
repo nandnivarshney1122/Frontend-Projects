@@ -1,42 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
- <link rel="stylesheet" href="style.css">
- <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-</head>
-<body>
-  <div class="main">
-<div class="elem" id="elem1">
-<div class="nav">
-  <h4>About</h4>
-  <h4>News</h4>
-  <h4>Cart</h4>
-  <i class="ri-shopping-bag-line"></i>
-</div>
-<div class="between"> 
-  <h1>Lightly padded,<br>quality jacket in <br>recycled polyster.</h1>
-</div>
-<div class="lower">
-  <div class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sit itaque nostrum, officia, officiis corporis vero debitis ipsa ea suscipit tempore adipisci magni nulla doloremque, voluptate accusamus quo aperiam laboriosam!</div>
-  <div class="b">
-    <hr><br>
-    <h6>Add to cart</h6>
-    <i class="ri-arrow-right-up-line"></i><br>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    /*background-color: aqua;*/
+}
+#nav{
+    width: 100%;
+    height: 8%;
+/*    background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    gap:860px;
+    align-items: center;
+}
+#nav-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 7%;
+    height: 100%;
+    /*background-color: rgb(203, 124, 21);*/
+}
+#nav-part2{
+    width:93% ;
+    height: 100%;
+    /*background-color: brown;*/
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#nav-part2 h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+#nav-part2 h4 span{
+    color:rgb(96, 93, 93);
+    margin: 10px;
+}
+#circle1{
+    width: 22px;
+    height:22px;
+    border-radius: 50%;
+    background-color: black;
+}
+#circle2{
+    width: 22px;
+    height:22px;
+    border-radius: 50%;
+    background-color: black;
+}
+#nav2{
+    width:100% ;
+    height:10% ;
+   /* background-color: blue;*/
+    display:flex;
+    align-items: center;
+    gap: 30px;
 
-    <hr><br><h6>products details</h6>
-    <i class="ri-arrow-right-up-line"></i><br><hr><br>
+}
+#nav2 h4{
+    font-size:20px ;
+    font-weight:500 ;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+#content{
+    width: 100%;
+    height:82%;
+    /*background-color: rgb(217, 20, 53);*/
    
-  </div>
-</div>
-</div>
+}
+#content1{
+    width: 100%;
+    height: 50%;
+    /*background-color: chartreuse;*/
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
   
-<div class="elem" id="elem2"></div>
-</div>
-</body>
-</html>
+    
+    
+}
+#content1::-webkit-scrollbar{
+    display: none;
+}
+    .elem{
+        width: 50%;
+        height: 100%;
+        /*background-color:yellow;*/
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .elem h1{
+        font-size: 110px;
+        font-weight: 10;
+    }
+
+#content2{
+    width: 100%;
+    height: 50%;
+   /* background-color: cadetblue;*/
+}
+#content2 img{
+    width: 100%;
+    height: 100%;
+    background-image: cover;
+}
